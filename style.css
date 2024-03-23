@@ -1,0 +1,169 @@
+/* style.css - Styling for prjJSON
+    Class: CSC 235 Server Side Development
+    Week 6- prjJSON
+    Student Name: Brittany Schaefer
+    Written: 4/23/22
+    Revised: 
+*/
+/******************************************
+*    displaying movie information
+*******************************************/
+#displayMovies{
+    background-color: black;
+}
+/*header*/
+#dispHeader {
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+#dispHeader h1{
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 4px solid white;
+    padding-bottom: 1em;
+}
+/*movie container information*/
+#movieContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movieSpot{
+    background-color: rgb(178, 68, 68);
+    margin: 1em;
+    width: 20em;
+    min-height: 25em;
+    display: grid;
+    grid-template-columns: 4em 8em 8em;
+    grid-template-rows: 4em 8em 8em 4em;
+    border: 1px solid black;
+}
+.one{
+    border-bottom: 1px gray solid;
+    border-right: 1px gray solid;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+.two{
+    border-bottom: 1px gray solid;
+    border-right: 1px gray solid;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+.three{
+    border-bottom: 1px gray solid;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 1;
+}
+.four{
+    text-align: center;
+    font-size: xx-large;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+.five{
+    padding: .5em;
+    grid-column: 1/span 3;
+    grid-row: 3;
+}
+.six{
+    padding: .5em;
+    grid-column: 1/span 3;
+    grid-row: 4;
+}
+/*************************************
+*  edit movie info
+*************************************/
+#editMovies{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+#editMovies h1{
+    text-align: center;
+}
+#editMovies table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+#editMovies th{
+    background-color: rgb(178, 68, 68);
+    color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#editMovies tr{
+    height: 2.5em;
+    border: 1px solid black;
+}
+#editMovies tr:nth-child(even){
+    background-color: rgb(201, 199, 199);
+}
+#editMovies tr:nth-child(odd){
+    background-color: rgb(146, 144, 144);
+}
+#editMovies tr input{
+    font-size: small;
+
+}
+#editMovies td{
+    font-size: large;
+}
+.name{
+    width: 15%;
+}
+.nameIN{
+    margin-left: 2%;
+    width: 96%;
+}
+.description{
+    width: 40%;
+}
+.descriptionIN{
+    margin-left: 2%;
+    width: 96%;    
+}
+.genre{
+    width: 8%;
+}
+.genreIN{
+    width: 90%;
+}
+.rating{
+    width: 6%;
+}
+.ratingIN{
+    width: 90%;
+}
+.runTime{
+    width: 6%;
+}
+.runTimeIN{
+    width: 90%;
+}
+.showTime{
+    width: 15%;
+}
+.showTimeIN{
+    width: 90%;
+}
+button{
+    background-color: rgb(178, 68, 68);
+    color: white;
+    margin: 1em;
+    margin-right: 1em;
+    float: right;
+    font-size: small;
+    padding: 15px 30px;
+}
+/*************************************
+*  ajax information
+*************************************/
+#ajaxContent{
+    margin-top: 5em;
+    border-top: 2px solid black;
+}
